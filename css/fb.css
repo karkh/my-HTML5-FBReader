@@ -1,0 +1,71 @@
+body {
+	Margin: 0;
+	Padding: 0;
+	Color: black;
+	Background-color: #eeddcc;
+	Font-family: serif;
+}
+
+#file-browser, #notes-page {
+	Padding: 1ex;
+	Margin: 1ex;
+	Background-color: #f0f0f0;
+	Border: 1px solid black;
+	Box-shadow: 3px 3px 3px;
+}
+
+#title-page {
+	Text-align: center;
+	Font-weight: bold;
+	Width: 70ex;
+	Max-width: 80%;
+	Margin: 0 auto;
+}
+
+.annotation {
+	Text-align: left;
+	Margin: 1em 5ex;
+}
+
+.epigraph {
+	Text-align: left;
+	Margin: 1em 0;
+	Margin-left: 40%;
+	Font-style: italic;
+}
+
+#toc-page, #nav-links, #content, #blurb {
+	Width: 70ex;
+	Max-width: 80%;
+	Padding: 1em 5ex;
+	Margin: 1em auto;
+	Background-color: #f0f0f0;
+	Border: 1px solid black;
+	Box-shadow: 3px 3px 3px;
+}
+
+#notes-page {
+	Overflow: auto;
+	Position: fixed;
+	Bottom: 0;
+	Left: 0;
+	Right: 0;
+	Top: 60%;
+	Display: none;
+}
+
+#close-notes {
+	Position: absolute;
+	Top: 1ex;
+	Right: 1ex;
+}
+
+#nav-links { Text-align: center; }
+#prev-link { Float: left; }
+#next-link { Float: right; }
+
+h1, h2, h3 { Font-family: sans-serif; }
+#content { Text-align: justify; }
+#content table { Text-align: left; }
+
+#reader { Display: none; }

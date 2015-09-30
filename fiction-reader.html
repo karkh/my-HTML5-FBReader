@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html manifest="fiction-reader.appcache">
+ <head>
+  <meta charset="utf-8">
+  <title>FictionReader JS</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="./css/fb.css" rel="stylesheet">
+  <script src="./js/fbreader.js"></script>
+ </head>
+
+ <body role="application">
+  <form id="file-browser">
+   <label>
+    Open a file from your computer:
+    <input type="file" id="local-file">
+   </label>
+   Only FictionBook (.FB2) files are supported.
+  </form>
+
+  <div id="reader">
+
+  <div id="title-page" role="complementary">
+   <h1 id="book-title"></h1>
+   <p id="book-authors"></p>
+   <div id="book-annotation" class="annotation"></div>
+   <p id="prepared-by"></p>
+   <p id="prepared-with"></p>
+   <p id="prepared-on"></p>
+  </div>
+
+  <div id="toc-page" role="navigation">
+   <h2>Table of Contents</h2>
+   <ol id="toc"></ol>
+  </div>
+
+  <div id="content" role="main" aria-live="polite"></div>
+
+  <div id="nav-links" role="navigation">
+   <a href="#content" id="prev-link">Previous</a>
+   <a href="#content" id="next-link">Next</a>
+   <a href="#toc-page" title="Table of Contents">ToC</a>
+  </div>
+
+  <div id="notes-page" role="complementary">
+   <h2>Notes</h2>
+   <a id="close-notes" href="#">Close notes</a>
+   <div id="notes-content">
+
+   </div>
+  </div>
+
+  </div>
+
+  <div id="blurb" role="contentinfo">
+   <h2>What is this?</h2>
+
+   <p>FictionReader JS is an incomplete reader for the FictionBook
+   format, also known as FB2. FictionBook is an open e-book format
+   created in Russia, where it's the most popular.</p>
+
+   <p>You can find out more about the format at:</p>
+
+   <ul>
+    <li><a href="http://fictionbook.org/index.php/English">the official FictionBook website</a>;</li>
+    <li><a href="https://en.wikipedia.org/wiki/FictionBook">Wikipedia</a>;</li>
+    <li><a href="http://wiki.mobileread.com/wiki/FB2">the MobileReads Wiki</a>.</li>
+   </ul>
+
+   <p>Books in this format can be found at:</p>
+
+   <ul>
+    <li><a href="http://manybooks.net/">ManyBooks.net</a> and</li>
+    <li><a href="http://fictionbook-lib.org/">fictionbook-lib.org</a>.</li>
+   </ul>
+
+   <h2>Status</h2>
+
+   <p>As of 2013-04-01, FictionReader JS can load FB2 files off your
+   computer and display the text in a navigable format. I couldn't get
+   images to work.</p>
+
+   <p>FictionReader JS has been developed with Firefox 17 and tested
+   in Opera 12. Any compatibility reports would be appreciated.</p>
+
+   <h2>License</h2>
+
+   <p>FictionReader JS was written by
+   <a href="http://felix.plesoianu.ro/">Felix Pleșoianu</a>.</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+  </div>
+ </body>
+</html>
